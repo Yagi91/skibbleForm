@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTMLFormElement</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <h1>Simple Form Element</h1>
       <form method="post" action="#">
-        <fieldset>
+        <h2>Simple Form Element</h2>
+        <fieldset class="fieldset_personal">
           <legend>Personal Details</legend>
-          <div class="form_container-name">
+          <div class="form_container-name form_container">
             <label for="name">Name:</label>
             <input
               type="text"
@@ -22,7 +23,7 @@
               required
             />
           </div>
-          <div class="form_container-password">
+          <div class="form_container-password form_container">
             <label for="password">Password:</label>
             <input
               type="password"
@@ -32,7 +33,7 @@
               required
             />
           </div>
-          <div class="form_container-email">
+          <div class="form_container-email form_container">
             <label for="email">Email id:</label>
             <input
               type="email"
@@ -42,14 +43,14 @@
               required
             />
           </div>
-          <div class="form_container-gender">
+          <div class="form_container-gender form_container">
             <span>Gender:</span>
-            <label for="male">Male</label>
             <input type="radio" id="male" name="gender" />
-            <label for="female">Female</label>
+            <label for="male">Male</label>
             <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
           </div>
-          <div class="form_container-contact">
+          <div class="form_container-contact form_container">
             <label for="contact">Contact#:</label>
             <input
               type="tel"
@@ -60,23 +61,24 @@
             />
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset_address">
           <legend>Address Information</legend>
           <div class="form_cotainer-degree">
             <label for="degree">Degree</label>
             <select name="degree" id="degree">
               <option value="">--Select Group--</option>
-              <option value="btech">B.Tech</option>
-              <option value="mtech">M.Tech</option>
+              <option value="bTech">B.Tech</option>
+              <option value="mTech">M.Tech</option>
               <option value="phd">PhD</option>
             </select>
           </div>
           <div class="form_container-hobbies">
             <span>Hobbies:</span>
-            <label for="playing chess">Playing Chess</label>
             <input type="checkbox" id="playing chess" name="hobby" />
-            <label for="reading books">Reading Books</label>
+            <label for="playing chess">Playing Chess</label>
+
             <input type="checkbox" id="reading books" name="hobby" />
+            <label for="reading books">Reading Books</label>
           </div>
           <div class="form_container-photo">
             <label for="attach photo">Attach Photo</label>
@@ -88,9 +90,9 @@
             />
           </div>
         </fieldset>
-        <div class="buttons">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+        <div class="buttons_container">
+          <button type="submit" class="button">Submit</button>
+          <button type="reset" class="button button-reset">Reset</button>
         </div>
       </form>
     </main>
