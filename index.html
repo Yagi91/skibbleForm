@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMLFormElement</title>
+  </head>
+  <body>
+    <main>
+      <h1>Simple Form Element</h1>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div class="form_container-name">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form_container-password">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form_container-email">
+            <label for="email">Email id:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form_container-gender">
+            <span>Gender:</span>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+          </div>
+          <div class="form_container-contact">
+            <label for="contact">Contact#:</label>
+            <input
+              type="tel"
+              name="contact"
+              id="contact"
+              placeholder="Enter your contact number"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Address Information</legend>
+          <div class="form_cotainer-degree">
+            <label for="degree">Degree</label>
+            <select name="degree" id="degree">
+              <option value="">--Select Group--</option>
+              <option value="btech">B.Tech</option>
+              <option value="mtech">M.Tech</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+          <div class="form_container-hobbies">
+            <span>Hobbies:</span>
+            <label for="playing chess">Playing Chess</label>
+            <input type="checkbox" id="playing chess" name="hobby" />
+            <label for="reading books">Reading Books</label>
+            <input type="checkbox" id="reading books" name="hobby" />
+          </div>
+          <div class="form_container-photo">
+            <label for="attach photo">Attach Photo</label>
+            <input
+              type="file"
+              id="attach photo"
+              name="photo"
+              accept="image/png, image/jpeg, image/jpg, image/ico, image/bmp, image/svg, image/webp"
+            />
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
